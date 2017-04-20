@@ -1,0 +1,17 @@
+Inception v4 , suittable for image with around 299 x 299
+
+Reference:
+    Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning
+    Christian Szegedy, Sergey Ioffe, Vincent Vanhoucke
+    arXiv.1602.07261
+
+__author__ = 'zhangshuai'
+
+##use:
+
+parser.add_argument('--network', type=str, default='resnet152',
+                    choices = ['alexnet', 'vgg', 'googlenet', 'inception-bn',
+                               'inception-bn-full', 'inception-v3', 'inception-v4', 'resnet', 'inception-resnet-v2', 'resnet152'],
+                    help = 'the cnn to use')
+
+you can make default='inception-v4' to use it.
